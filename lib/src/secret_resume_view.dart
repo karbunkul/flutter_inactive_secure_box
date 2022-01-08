@@ -57,6 +57,7 @@ class _SecretResumeViewState extends State<SecretResumeView>
       if ((widget.sigma ?? 0) > 0) {
         sigma = widget.sigma!;
       }
+
       return LayoutBuilder(
         builder: (_, constraints) {
           return Stack(
@@ -68,7 +69,7 @@ class _SecretResumeViewState extends State<SecretResumeView>
                   width: constraints.smallest.width,
                   height: constraints.smallest.height,
                 ),
-              )
+              ),
             ],
           );
         },

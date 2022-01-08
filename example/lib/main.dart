@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      builder: (_, child) => SecretResumeView(child: child!),
+      // builder: (_, child) => SecretResumeView(child: child!),
       home: const HomePage(),
     );
   }
