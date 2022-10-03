@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:secret_resume_view/secret_resume_view.dart';
+import 'package:inactive_secure_box/inactive_secure_box.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      // builder: (_, child) => SecretResumeView(child: child!),
+      theme: ThemeData(primarySwatch: Colors.teal),
+      builder: (_, child) => InactiveSecureBox(child: child!),
       home: const HomePage(),
     );
   }
@@ -25,13 +24,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('SecretResumeView'),
-      ),
+      appBar: AppBar(title: const Text('Inactive secure box')),
       body: const Center(
-        child: SecretResumeView(
-          child: Text('Secret'),
-        ),
+        child: InactiveSecureBox(child: Text('Secret content')),
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),

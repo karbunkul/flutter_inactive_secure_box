@@ -1,7 +1,7 @@
-name: secret_resume_view
-description: A new Flutter project.
-version: 0.0.1
-homepage:
+name: inactive_secure_box
+description: Show secure box (blurred child widget) as like iOS in inactive app lifecycle.
+version: 0.9.5
+repository: https://github.com/karbunkul/flutter_inactive_secure_box.git
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
